@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                padding-top: 20px;
+                padding-left: 50px;
+            }
+            .main{
+                padding: 10px 20px 20px 25px;
+                display:inline-block;
+                background-color:bisque;
+            }
+
+            #form-content{
+                padding-top: 2%;
+                padding-right:10%;
+                padding-bottom: 2%;
+                padding-left: 5%;
+                background-color: beige;
+                border-style: double;
+            }
+
+        </style>    
+        <title>Student Admission Portal</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>
+                Student Admission Form
+            </h1>
+            <div id="form-content">
+                <form action="/img/submit.png" >
+                    
+                    <label for="studentname">Student Name:<br>
+                    <input Name type="text" id="studentname"  name="studentname" style="width:auto;" pattern="^[A-Z][a-zA-Z]{2,50}"  required><br><br>
+                </label>
+                
+                    <label for="fathername">Father's Name:</label><br>
+                    <input type="text"  id="fathername" name="fathername"  style="width:auto;" pattern="^[A-Z][a-zA-Z]{2,}" minlength="3" maxlength="50" required><br><br>
+
+                    <label for="mothername">Mother's Name:</label><br>
+                    <input type="text"  id="mothername" name="mothername"  style="width:auto;" pattern="^[A-Z][a-zA-Z]{2,}" minlength="3" maxlength="50" required><br><br>
+
+                    <label for="mobilenum">Mobile Number:</label><br>
+                    <input type="tel" id="mobilenum" name="mobilenum"  style="width:auto;"  minlength="10" maxlength="10" required><br><br>
+
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address"  style="width:auto;" maxlength="100" required><br><br>
+               
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="id" max="2017-12-31" required><br><br>
+                
+                    <label for="previousmarks">Previous Class' Marks:</label><br>
+                    <input type="number" id="previousmarks" name="previousmarks" style="width:auto;" required><br><br>
+                
+                    <input type="submit" id="submit" name="submit">
+                    <input type="reset" id="reset" name="reset">
+                </form>
+            </div>
+        </div>̥
+    </body>
+</html>
