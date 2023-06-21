@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="/Forms/img/favicon.jpg">
+    <link rel="stylesheet" href="/Forms/css/style.css">
+
+    <title>Student Admission Portal</title>
+</head>
+
+<div class="main">
+    <h1>
+        Student Admission Form
+    </h1>
+
+    <div id="form-content">
+        <form id="studentdata">
+            <div class="title">
+                <label for="studentname">Student Name:</label><br>
+                <input type="text" id="studentname" style="width:40ch;" pattern="^[A-Z][a-zA-Z]{2,50}"
+                    required><br><br>
+            </div>
+
+            <div class="title">
+                <label for="fathername">Father's Name:</label><br>
+                <input type="text" id="fathername" name="fathername" style="width:40ch;"
+                    pattern="^[A-Z][a-zA-Z]{2,}" minlength="3" maxlength="50" required><br><br>
+
+            </div>
+
+            <div class="title">
+                <label for="mothername">Mother's Name:</label><br>
+                <input type="text" id="mothername" name="mothername" style="width:40ch;"
+                    pattern="^[A-Z][a-zA-Z]{2,}" minlength="3" maxlength="50" required><br><br>
+
+            </div>
+
+            <div class="title">
+                <label for="mobilenum">Mobile Number:</label><br>
+                <input type="tel" id="mobilenum" name="mobilenum" style="width:auto;" minlength="10" maxlength="10"
+                    required><br><br>
+
+            </div>
+
+            <div class="title">
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" style="width:40ch;" maxlength="100" required><br><br>
+
+            </div>
+
+            <div class="title">
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="id" max="2017-12-31" required><br><br>
+
+            </div>
+
+            <div class="title">
+                <label for="previousmarks">Previous Class' Marks:</label><br>
+                <input type="decimal" id="previousmarks" name="previousmarks" style="width:auto;" required><br><br>
+
+            </div>
+
+            <div class="buttons">
+                <input type="button" id="submit" name="submit" value="Submit" onclick="saveData()">
+                <input type="reset" id="reset" name="reset" onclick="resetForm()">
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/Forms/js/script.js"></script>
+</body>
+</html>
